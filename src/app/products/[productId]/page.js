@@ -21,11 +21,11 @@ export async function generateMetadata({ params }) {
 // ////////7let moshklet dynamic rendering 3lshan el data sabta l ay 7d////////////////////////////////////
 
 
-export async function generateStaticParams() {
-  const users = await getAllUsers();
-  const ids = users.map((user) => ({ productId: user.id.toString() }));
-  return ids;
-}
+// export async function generateStaticParams() {
+//   const users = await getAllUsers();
+//   const ids = users.map((user) => ({ productId: user.id.toString() }));
+//   return ids;
+// }
 
 // //////////////////////////////////////////////////////////////////////
 async function Details({ params }) {
